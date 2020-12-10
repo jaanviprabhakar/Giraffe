@@ -1,5 +1,6 @@
 # Giraffe
 ## An Introduction to C#
+freeCodeCamp.org
 
 ```
 Download Visual Studio Community from: https://visualstudio.microsoft.com/vs/community/
@@ -20,4 +21,5 @@ List of Contents
 2. Variables
 3. Data Types
 4. Strings
-
+5. Working with Numbers
+..* Math methods
