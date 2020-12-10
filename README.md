@@ -23,3 +23,4 @@ List of Contents
 4. Strings
 5. Working with Numbers
   * Math methods
+6. Getting User Input

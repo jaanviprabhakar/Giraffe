@@ -6,17 +6,13 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            int num=6, a=num++, b=num--;
-
-            Console.WriteLine(Math.Abs(-40));
-            Console.WriteLine(Math.Pow(3, 2));
-            Console.WriteLine(Math.Pow(3.8,2));
-            Console.WriteLine(Math.Sqrt(64));
-            Console.WriteLine(Math.Max(-40,-20));
-            Console.WriteLine(Math.Min(0, -29));
-            Console.WriteLine(Math.Round(4.3));
-            Console.WriteLine(Math.Round(4.6));
-
+            //Console.WriteLine() prints then moves to new line
+            //Console.Write() prints and stays on the same line
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            string age = Console.ReadLine();
+            Console.WriteLine("Hello "+name+ ", you are "+age+" years old.");
             Console.ReadLine();
         }
     }
