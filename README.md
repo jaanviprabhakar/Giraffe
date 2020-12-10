@@ -25,3 +25,4 @@ List of Contents
    *Math methods
 6. Getting User Input
 7. Building a Calculator
+8. Building a Mad Lib
