@@ -8,18 +8,14 @@ namespace Giraffe
         {
             int num=6, a=num++, b=num--;
 
-            Console.WriteLine(50);
-            Console.WriteLine(-5.783);
-            Console.WriteLine(5+8);
-            Console.WriteLine(5/8);
-            Console.WriteLine(25%3);
-            Console.WriteLine(4+2*3);
-            Console.WriteLine((4+2)*3);
-            Console.WriteLine(5+8.3);
-            Console.WriteLine(5/2);
-            Console.WriteLine(5/2.0);
-            Console.WriteLine(a);
-            Console.WriteLine(b);
+            Console.WriteLine(Math.Abs(-40));
+            Console.WriteLine(Math.Pow(3, 2));
+            Console.WriteLine(Math.Pow(3.8,2));
+            Console.WriteLine(Math.Sqrt(64));
+            Console.WriteLine(Math.Max(-40,-20));
+            Console.WriteLine(Math.Min(0, -29));
+            Console.WriteLine(Math.Round(4.3));
+            Console.WriteLine(Math.Round(4.6));
 
             Console.ReadLine();
         }

@@ -22,4 +22,4 @@ List of Contents
 3. Data Types
 4. Strings
 5. Working with Numbers
-..* Math methods
+  * Math methods
