@@ -4,10 +4,20 @@
 ```
 Download Visual Studio Community from: https://visualstudio.microsoft.com/vs/community/
 ```
-```
-Start a project in .NET desktop development.
-```
+
+### Start a project in .NET desktop development.
 
 Developement Settings --> General. 
+
 Template --> Console App (.NET Framework) Visual C#
+
 Exension of the file: .cs (for C Sharp)
+
+```
+List of Contents
+```
+1. Drawing a Shape
+2. Variables
+3. Data Types
+4. Strings
+
