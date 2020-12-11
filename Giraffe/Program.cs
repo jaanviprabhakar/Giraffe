@@ -6,34 +6,46 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            int n1=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The cube is: "+Cube(n1));
-            Console.Write("Enter another number: ");
-            int n2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The cube is: " + Factorial(n2));
-
-            Console.ReadLine();
-        }
-
-        static int Cube(int num)
-        {
-            int result = num * num * num;
-            return result;
-        }
-
-        //extra-recursive function example
-        static int Factorial(int num2)
-        {
-            int f=1;
-            while(num2!=0)
+            bool isMale = false;
+            bool isTall = false;
+            int a = 5, b = 3, c = 2;
+            
+            // && is used for AND
+            if (isMale!=true && isTall==false) 
             {
-                f *= num2;
-                num2--;
-                Factorial(num2);
-
+                Console.WriteLine("You are a petit female.");
             }
-            return f;
+            else
+            {
+                Console.WriteLine("You are male or tall or both.");
+            }
+
+            // || is used for OR 
+            if (isMale == true || isTall == false)
+            {
+                Console.WriteLine("You are male or small or both.");
+            }
+            else
+            {
+                Console.WriteLine("You are female or tall or both.");
+            }
+
+
+            //else-if example
+            if(a%2==0 && b%2==0 && c%2==0) //all even
+            {
+                Console.WriteLine("Block 1: All three numbers are even.");
+            }
+            else
+            if(a%2==0||b%2==0)
+            {
+                Console.WriteLine("Block 2: One of first two numbers is even.");
+            }
+            else
+            {
+                Console.WriteLine("Block 3: One of last two numbers is even.");
+            }
+
         }
     }
 }
