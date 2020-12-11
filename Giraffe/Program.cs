@@ -6,24 +6,15 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            //declaring arrays
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
-            string[] friends = new string[5];
-            friends[0] = "Ken";
-            friends[1] = "Barbie";
-            for (int i = 2; i < 5; i++)
-            {
-                friends[i] = "Kendall";
-            }
-            for(int i=0;i<5;i++)
-            {
-                Console.WriteLine("Friend "+i+" = "+friends[i]);
-            }
-            luckyNumbers[1] = 900;
-            Console.WriteLine(luckyNumbers[1]);
-            Console.WriteLine( luckyNumbers[2] );
-            
+            SayHi("Walter White",65);
+            SayHi("Saul",52);
+            SayHi("Jesse Pinkman",25);
             Console.ReadLine();
+        }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello "+name+" you are "+age+" years old.");
         }
     }
 }

@@ -22,9 +22,10 @@ List of Contents
 3. Data Types
 4. Strings
 5. Working with Numbers
-   *Math methods
+   * Math methods
 6. Getting User Input
 7. Building a Calculator
 8. Building a Mad Lib
 9. Arrays
+10. Methods
 
