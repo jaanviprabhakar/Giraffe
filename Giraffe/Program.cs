@@ -6,15 +6,34 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            SayHi("Walter White",65);
-            SayHi("Saul",52);
-            SayHi("Jesse Pinkman",25);
+            Console.Write("Enter a number: ");
+            int n1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The cube is: "+Cube(n1));
+            Console.Write("Enter another number: ");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The cube is: " + Factorial(n2));
+
             Console.ReadLine();
         }
 
-        static void SayHi(string name, int age)
+        static int Cube(int num)
         {
-            Console.WriteLine("Hello "+name+" you are "+age+" years old.");
+            int result = num * num * num;
+            return result;
+        }
+
+        //extra-recursive function example
+        static int Factorial(int num2)
+        {
+            int f=1;
+            while(num2!=0)
+            {
+                f *= num2;
+                num2--;
+                Factorial(num2);
+
+            }
+            return f;
         }
     }
 }
