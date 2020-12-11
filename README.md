@@ -26,3 +26,5 @@ List of Contents
 6. Getting User Input
 7. Building a Calculator
 8. Building a Mad Lib
+9. Arrays
+
