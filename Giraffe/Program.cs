@@ -6,46 +6,26 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            bool isMale = false;
-            bool isTall = false;
-            int a = 5, b = 3, c = 2;
-            
-            // && is used for AND
-            if (isMale!=true && isTall==false) 
+            Console.WriteLine(GetMax(20,10,40));
+            Console.ReadLine();    
+        }
+
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+            if(num1 >= num2 && num1>= num3)
             {
-                Console.WriteLine("You are a petit female.");
+                result = num1;
+            }
+            else if(num2 >= num1 && num2 >= num3)
+            {
+                result = num2;
             }
             else
             {
-                Console.WriteLine("You are male or tall or both.");
+                result = num3;
             }
-
-            // || is used for OR 
-            if (isMale == true || isTall == false)
-            {
-                Console.WriteLine("You are male or small or both.");
-            }
-            else
-            {
-                Console.WriteLine("You are female or tall or both.");
-            }
-
-
-            //else-if example
-            if(a%2==0 && b%2==0 && c%2==0) //all even
-            {
-                Console.WriteLine("Block 1: All three numbers are even.");
-            }
-            else
-            if(a%2==0||b%2==0)
-            {
-                Console.WriteLine("Block 2: One of first two numbers is even.");
-            }
-            else
-            {
-                Console.WriteLine("Block 3: One of last two numbers is even.");
-            }
-
+            return result;
         }
     }
 }
