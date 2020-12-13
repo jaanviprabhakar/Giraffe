@@ -32,3 +32,4 @@ List of Contents
 15. if Statement
 16. Comparision Operators
 17. Calculator2
+18. Switch case
