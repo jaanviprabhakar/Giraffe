@@ -34,4 +34,5 @@ List of Contents
 17. Calculator2
 18. Switch case
 19. while & do-while loops
-20.
+20. Guessing Game
+21. for Loops

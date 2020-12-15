@@ -6,23 +6,35 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            int index = 6, index2 = 1;
+            string secretWord = "giraffe", guess = "";
+            int guessCount=0;
+            int guessLimit = 3;
+            bool isLimit = false;
 
-            Console.WriteLine("Do While Loop:");
-            do
+
+            while(guess!=secretWord && !isLimit)
             {
-                Console.WriteLine(index);
-                index++;
-
-            } while (index <= 5);
-
-            Console.WriteLine("While Loop:");
-            while(index2 <= 5)
-            {
-                Console.WriteLine(index2);
-                index2++;
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    isLimit = true;
+                }
             }
-             Console.ReadLine();
+
+            if (isLimit)
+            {
+                Console.WriteLine("Out of guesses.");
+            }
+            else
+            {
+                Console.WriteLine("Right Guess!");
+            }
+                Console.ReadLine();
         }
     }
 }
