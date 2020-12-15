@@ -33,3 +33,5 @@ List of Contents
 16. Comparision Operators
 17. Calculator2
 18. Switch case
+19. while & do-while loops
+20.

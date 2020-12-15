@@ -6,57 +6,24 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number corresponding to the day of the week: ");
-            int day=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The day is: "+GetDay(day));
+            int index = 6, index2 = 1;
 
-            Console.ReadLine();
-        }
-
-        static string GetDay(int dayNum)
-        {
-            string dayName;
-
-            switch(dayNum)
+            Console.WriteLine("Do While Loop:");
+            do
             {
-                case 0:
-                    dayName = "Sunday";
-                    break;
+                Console.WriteLine(index);
+                index++;
 
-                case 1:
-                    dayName = "Monday";
-                    break;
+            } while (index <= 5);
 
-                case 2:
-                    dayName = "Tuesday";
-                    break;
-
-                case 3:
-                    dayName = "Wednesday";
-                    break;
-
-                case 4:
-                    dayName = "Thursday";
-                    break;
-
-                case 5:
-                    dayName = "Friday";
-                    break;
-
-                case 6:
-                    dayName = "Saturday";
-                    break;
-
-                case 7:
-                    dayName = "Sunday";
-                    break;
-
-                default:
-                    dayName = "Invalid Day Number";
-                    break;
+            Console.WriteLine("While Loop:");
+            while(index2 <= 5)
+            {
+                Console.WriteLine(index2);
+                index2++;
             }
-
-            return dayName;
+             Console.ReadLine();
         }
     }
 }
+
