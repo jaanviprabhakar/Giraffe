@@ -36,3 +36,4 @@ List of Contents
 19. while & do-while loops
 20. Guessing Game
 21. for Loops
+22. Exponent method
