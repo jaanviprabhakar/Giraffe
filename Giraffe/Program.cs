@@ -6,42 +6,36 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            int[,] numberGrid = {
-                { 1, 2 },
-                { 3, 4 },
-                { 5, 6 }
-            };
-
-            for( int i=0; i<3;i++)
+            try
             {
-                for( int j=0; j<2; j++)
-                {
-                    Console.WriteLine("Element at row "+i+" column "+j+" : "+numberGrid[i,j]);
-                }
-                
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
             }
 
-            string[,] animals = new string[2, 3];
-            Console.WriteLine("\nEnter 2 groups of 3 animal names.\n");
-            for( int i=0; i<2; i++)
+            catch (DivideByZeroException z)
             {
-                for(int j=0; j<3; j++)
-                {
-                    Console.Write("Enter animal name: ");
-                    animals[i,j]=Console.ReadLine();
-                }
+                Console.WriteLine(z.Message + " First block.");
             }
 
-            Console.WriteLine();
-            for (int i = 0; i < 2; i++)
+            catch (FormatException f)
             {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write(animals[i,j]+ " ");
-                   
-                }
-                Console.WriteLine();
+                Console.WriteLine(f.Message + " Second block.");
             }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            finally
+            {
+                Console.WriteLine("Finally Block.");
+            }
+            
             Console.ReadLine();
         }
 
