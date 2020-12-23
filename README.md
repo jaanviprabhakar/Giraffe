@@ -37,3 +37,6 @@ List of Contents
 20. Guessing Game
 21. for Loops
 22. Exponent method
+23. 2D Arrays
+24. Exception Handling
+25. Classes & Objects

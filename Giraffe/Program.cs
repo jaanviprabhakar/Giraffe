@@ -6,36 +6,26 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            try
+            Book book1 = new Book
             {
-                Console.Write("Enter a number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter another number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+                title = "The Sun Is Also A Star",
+                author = "Nicola Yoon",
+                pages = 384
+            }; //book object
 
-                Console.WriteLine(num1 / num2);
-            }
+            Console.WriteLine(book1.title);
+            Console.WriteLine(book1.pages);
+            Console.WriteLine(book1.author+"\n");
 
-            catch (DivideByZeroException z)
-            {
-                Console.WriteLine(z.Message + " First block.");
-            }
+            Book book2 = new Book(); //book object
+            book2.title = "The Secret";
+            book2.author = "Rhonda Byrne";
+            book2.pages = 198;
 
-            catch (FormatException f)
-            {
-                Console.WriteLine(f.Message + " Second block.");
-            }
+            Console.WriteLine(book2.title);
+            Console.WriteLine(book2.pages);
+            Console.WriteLine(book2.author);
 
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            finally
-            {
-                Console.WriteLine("Finally Block.");
-            }
-            
             Console.ReadLine();
         }
 
