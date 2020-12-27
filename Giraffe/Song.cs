@@ -10,7 +10,6 @@ namespace Giraffe
         public string artist;
         public int duration;
         public static int songCount = 0;
-        
         //static attributes are about the class themselves and not about objects
         public Song(string aTitle, string aArtist, int aDuration)
         {
@@ -18,6 +17,11 @@ namespace Giraffe
             artist = aArtist;
             duration = aDuration;
             songCount++;
+        }
+
+        public int getSongCount()
+        {
+            return songCount;
         }
     }
 }
