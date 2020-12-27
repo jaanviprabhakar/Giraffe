@@ -49,7 +49,7 @@ List of Contents
 26. Static Class Attribute
     * Calling with class name
     * Calling with object name
-
+27. Static Methods & Classes
 
 ## Extra Information
 Links
