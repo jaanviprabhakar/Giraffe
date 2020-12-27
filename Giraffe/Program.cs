@@ -5,16 +5,12 @@ namespace Giraffe
     class Program
     {
         static void Main(string[] args)
-        { 
-            Book book1 = new Book("The Sun Is Also A Star", "Nicola Yoon", 384);
-            Book book2 = new Book("The Secret", "Rhonda Byrne", 198);
+        {
+            Student student1 = new Student("Jaanvi","CSE",9.6);
+            Student student2 = new Student("Tanvi","GD",9.3);
 
-            //update
-            book1.title = "The Hobbit";
-
-            //print
-            Console.WriteLine("Name: " + book1.title + " Author: " + book1.author + " Pages: " + book1.pages);
-            Console.WriteLine("Name: "+book2.title+" Author: "+book2.author + " Pages: " + book2.pages);
+            Console.WriteLine(student1.name+": "+ student1.hasHonors());
+            Console.WriteLine(student2.name+": "+ student2.hasHonors());
 
             Console.ReadLine();
         }

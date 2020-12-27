@@ -41,3 +41,4 @@ List of Contents
 24. Exception Handling
 25. Classes & Objects
 26. Constructors
+27. Object Methods 
