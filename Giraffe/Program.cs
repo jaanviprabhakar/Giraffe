@@ -6,12 +6,12 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Student student1 = new Student("Jaanvi","CSE",9.6);
-            Student student2 = new Student("Tanvi","GD",9.3);
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
+            Movie shrek = new Movie("Shrek","Adam Adamson","Kawai"); //will return NR
+            // G, PG, PG-13, R, NR
 
-            Console.WriteLine(student1.name+": "+ student1.hasHonors());
-            Console.WriteLine(student2.name+": "+ student2.hasHonors());
-
+            Console.WriteLine(avengers.title + ": " + avengers.Rating);
+            Console.WriteLine(shrek.title + ": " + shrek.Rating);
             Console.ReadLine();
         }
 
