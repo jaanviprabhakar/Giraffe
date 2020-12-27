@@ -6,12 +6,15 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "PG-13");
-            Movie shrek = new Movie("Shrek","Adam Adamson","Kawai"); //will return NR
-            // G, PG, PG-13, R, NR
+            Song holiday = new Song("Holiday","Green Day", 200);
+            Console.WriteLine(Song.songCount);
+            Song kashmmir = new Song("Kashmir","Led Zeppelin", 150);
+            Console.WriteLine(Song.songCount);
+            //static attributes are called with class name and not object name.
 
-            Console.WriteLine(avengers.title + ": " + avengers.Rating);
-            Console.WriteLine(shrek.title + ": " + shrek.Rating);
+            Console.WriteLine(holiday.title);
+            Console.WriteLine(kashmmir.title);
+
             Console.ReadLine();
         }
 

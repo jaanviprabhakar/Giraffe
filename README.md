@@ -44,6 +44,9 @@ List of Contents
 23. Constructors
 24. Object Methods
 25. SGetters and Setters
+26. Static Class Attribute
+   * Calling with class name
+   * Calling with object name
 
 
 ## Extra Information
