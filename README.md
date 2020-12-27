@@ -15,6 +15,8 @@ Template --> Console App (.NET Framework) C#
 Exension of the file: .cs (for C Sharp)
 Enter project name and click on Next.
 
+Follow through the commits for each part.
+
 ```
 List of Contents
 ```
@@ -45,8 +47,8 @@ List of Contents
 24. Object Methods
 25. SGetters and Setters
 26. Static Class Attribute
-   * Calling with class name
-   * Calling with object name
+    * Calling with class name
+    * Calling with object name
 
 
 ## Extra Information
