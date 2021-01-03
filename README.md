@@ -50,6 +50,7 @@ List of Contents
     * Calling with class name
     * Calling with object name
 27. Static Methods & Classes
+28. Inheritance
 
 ## Extra Information
 Links
