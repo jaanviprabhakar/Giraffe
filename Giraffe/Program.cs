@@ -4,11 +4,18 @@ namespace Giraffe
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine(Math.Sqrt(144));
-            //no need to create instance of math class
-            UsefulTools.SayHi("Jaanvi");
+            Chef chef = new Chef();
+            chef.MakeChicken();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+            italianChef.MakePasta();
+
+            chef.MakeSpecialDish();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
         }
